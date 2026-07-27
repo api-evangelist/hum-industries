@@ -1,7 +1,26 @@
 aid: hum-industries
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hum-industries.png
 name: HUM Industries
-description: HUM Industries is a company surfaced as a portfolio company of a16z and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  HUM Industries is a consumer hardware company building a wearable AI assistant designed to
+  enhance social presence. The device records conversations locally, maintains a rolling buffer
+  of recent audio, and surfaces contextual information such as names, personal details, and
+  commitments back to the wearer through subtle audio cues. The company frames the product as
+  giving people "the freedom to forget" by offloading memory to the device so they can stay
+  present in the moment. At the time of profiling the product is pre-launch, offered through a
+  preorder waitlist, with no public API, developer portal, or third-party integration surface.
+  Backed by a16z; added to the API Evangelist network as a portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/hum-industries/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +30,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Wearables
+- Artificial Intelligence
+- Consumer Hardware
+- Voice
+- Memory
+- AI Assistant
+common:
+- type: DomainSecurity
+  url: security/hum-industries-domain-security.yml
+- type: Website
+  url: https://humindustries.com
+- type: SignUp
+  url: https://humindustries.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
